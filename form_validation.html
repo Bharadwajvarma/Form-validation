@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript form validation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="mystyle.css">
+  </head>
+
+  <body class="text-center">
+    <div class="container">
+      <div class="text-center mb-5">
+    <form class="form-signup" >
+      <img src="cts.png" alt="cts" width="140" height="72">
+      <h1 class=" py-1 text-center h3 mb-3 font-weight-normal">Welcome to Sme connect!</h1>
+      <div class="row">
+      <div class="col-md-6 mb-3">
+      <label  for="firstname">First Name</label>
+     
+      <input class="form-control" id="firstname" name="f_name" required
+      placeholder="Enter first name">
+    
+     </div>
+    
+      
+     <div class="col-md-6 mb-3">
+      <label  for="lastname">Last Name</label>
+      <input class="form-control" id="lastname" name="l_name" required
+      placeholder="Enter last name">
+    </div>
+  </div>
+
+    <div class="mb-3">
+      <label  for="email">Email</label>
+      <input class="form-control" type="email" id="email" name="Email" required
+      placeholder="92054@cognizant.com" pattern=".+@cognizant.com">
+      <span class="emailError" aria-live="polite"></span>
+    </div>
+
+      <div class="mb-3">
+      <label for="pass">Password:</label>
+      <input class="form-control" type="password" id="pass" name="password"
+      minlength="8" required pattern="^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$">
+      <span class="passwordError" aria-live="polite"></span>
+      </div>
+
+      <div class="mb-3">
+      <label for="confirmpass">Confirm Password:</label>
+      <input class="form-control" type="password" id="confirmpass" name="confirmpassword"
+      minlength="8" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">
+      <span class="confirmPassError" aria-live="polite"></span>
+    </div>
+      <button  class="btn btn-primary type="submit">Submit</button>
+    
+      
+    </form>
+  </div>
+</div>
+   <script src="myscript.js"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+
+</html>
